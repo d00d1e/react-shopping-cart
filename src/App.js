@@ -1,10 +1,15 @@
 import React from 'react';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Cat Shop</h1>
+    <div className="grid-container">
+      <header>
+        <a href="/">Catify Co.</a>
+      </header>
+      <main>
+        <h1>Product Lists</h1>
+      </main>
+      <footer>&#169;2020, Moose Inc. All rights reserved</footer>
     </div>
   );
 }
