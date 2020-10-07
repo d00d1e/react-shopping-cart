@@ -1,0 +1,54 @@
+{
+  "products": [
+    {
+      "_id": "toy1",
+      "title": "Toy Mice",
+      "image": "../img/products/toy-mice.jpg",
+      "description": "Small faux fur mice",
+      "price": "5",
+      "availableColors":["yellow", "blue"]
+    },
+    {
+      "_id": "toy2",
+      "title": "Rainbow Mice",
+      "image": "../img/products/rainbow-mice.jpg",
+      "description": "Small rainbow mice",
+      "price": "10",
+      "availableColors":["rainbow"]
+    },
+    {
+      "_id": "toy3",
+      "title": "Feather Ball",
+      "image": "../img/products/feather-ball.jpg",
+      "description": "Bouncy feather ball",
+      "price": "9",
+      "availableColors":["brown", "white", "pink"]
+    },
+    {
+      "_id": "toy4",
+      "title": "Rope Mice",
+      "image": "../img/products/rope-mice.jpg",
+      "description": "Striped rope mice",
+      "price": "5",
+      "availableColors":["pink", "blue", "orange", "green"]
+    },
+    {
+      "_id": "toy5",
+      "title": "Woven Ball",
+      "image": "../img/products/woven-ball.jpg",
+      "description": "Woven rattan ball",
+      "price": "3",
+      "availableColors":["white", "pink", "orange", "green", "yellow"]
+    },
+    {
+      "_id": "toy5",
+      "title": "Crinkle Ball",
+      "image": "../img/products/crinkle-ball.jpg",
+      "description": "Crinkle ball",
+      "price": "3",
+      "availableColors":["random"]
+    }
+
+  ]
+}
+

@@ -3,25 +3,26 @@
 /*
 Rose Gold: #bd8c7d
 Soft Gold: #d1bfa7
+Gold: #d4af37
 Silver: #8e8e90
 Onyx: #49494b 
 */
 
 html {
   font-size: 62.5%;
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body, 
 #root {
   margin: 0;
-  padding: 0;
   height: 100%;
 }
 
 body,
 input, 
 select, 
+button,
 textarea {
   font-size: 1.6rem;
   font-family: 'Roboto', sans-serif;
@@ -37,15 +38,21 @@ textarea {
 
 header {
   grid-area: header;
-  color: #8e8e90;
+  background: #49494b;
+  color: #fff;
   display: flex;
   align-items: center;
   padding: 0.5rem;
 }
 
 header a {
-  color: #8e8e90;
+  color: #fff;
   text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 a:hover {
@@ -54,16 +61,89 @@ a:hover {
 
 main {
   grid-area: main;
-  background-color: #8e8e90;
 }
 
 footer {
   grid-area: footer;
-  
-  color: #8e8e90;
-
-  /* center  */
+  background: #49494b;
+  color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex: 3 60rem;
+}
+
+.sidebar {
+  flex: 1 20rem;
+}
+
+
+/* PRODUCTS */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.products li {
+  flex: 0 1 29rem;
+  height: 38rem;
+  padding: 1rem;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product img {
+  max-width: 37rem;
+  max-height: 37 rem;
+
+}
+
+.product-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-price div, 
+.product-price button {
+  text-align: center;
+  flex: 1;
+}
+
+.product-price div {
+  font-size: 2rem;
+}
+
+.button {
+  padding: 1rem;
+  border: 0.1rem solid #8e8e90;
+  background: #F0C151;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #e2b13c;
+  border: 0.1rem solid #808080;
+}
+
+.button .primary {
+  background: #F0C151;
 }
