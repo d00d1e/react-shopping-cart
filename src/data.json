@@ -1,52 +1,52 @@
 {
   "products": [
     {
-      "_id": "toy1",
-      "title": "Toy Mice",
-      "image": "../img/products/toy-mice.jpg",
-      "description": "Small faux fur mice",
-      "price": "5",
-      "availableColors":["yellow", "blue"]
+      "_id": "shirt2",
+      "title": "Preppy Fleece Sweater",
+      "image": "../img/products/plaid-fleece.jpg",
+      "description": "Blue and green plaid fleece",
+      "price": "20",
+      "availableSizes":["S", "L"]
     },
     {
-      "_id": "toy2",
-      "title": "Rainbow Mice",
-      "image": "../img/products/rainbow-mice.jpg",
-      "description": "Small rainbow mice",
-      "price": "10",
-      "availableColors":["rainbow"]
+      "_id": "shirt1",
+      "title": "The Grinch Fur Vest",
+      "image": "../img/products/grinch-fur.jpg",
+      "description": "Limited edition mossy green shiny faux fur",
+      "price": "75",
+      "availableSizes":["S", "M", "L"]
     },
     {
-      "_id": "toy3",
-      "title": "Feather Ball",
-      "image": "../img/products/feather-ball.jpg",
-      "description": "Bouncy feather ball",
-      "price": "9",
-      "availableColors":["brown", "white", "pink"]
+      "_id": "shirt3",
+      "title": "Bad Ass Hoodie",
+      "image": "../img/products/badass-hoodie.jpg",
+      "description": "Black Bad Ass Hoodie",
+      "price": "19",
+      "availableSizes":["S", "M", "L", "XL"]
     },
     {
-      "_id": "toy4",
-      "title": "Rope Mice",
-      "image": "../img/products/rope-mice.jpg",
-      "description": "Striped rope mice",
-      "price": "5",
-      "availableColors":["pink", "blue", "orange", "green"]
+      "_id": "shirt5",
+      "title": "Blue Knit Sweater",
+      "image": "../img/products/blue-knit.jpg",
+      "description": "Hand knitted sleevless sweater",
+      "price": "35",
+      "availableSizes":["XS", "S", "M", "L"]
     },
     {
-      "_id": "toy5",
-      "title": "Woven Ball",
-      "image": "../img/products/woven-ball.jpg",
-      "description": "Woven rattan ball",
-      "price": "3",
-      "availableColors":["white", "pink", "orange", "green", "yellow"]
+      "_id": "shirt4",
+      "title": "The Wolf Fur Vest",
+      "image": "../img/products/fur.jpg",
+      "description": "Gray wolf fur vest",
+      "price": "50",
+      "availableSizes":["S", "M"]
     },
     {
-      "_id": "toy5",
-      "title": "Crinkle Ball",
-      "image": "../img/products/crinkle-ball.jpg",
-      "description": "Crinkle ball",
-      "price": "3",
-      "availableColors":["random"]
+      "_id": "shirt6",
+      "title": "Minimalist Mohair Sweater",
+      "image": "../img/products/tan-sweater.jpg",
+      "description": "Hand knit mohair sweater",
+      "price": "30",
+      "availableSizes":["XS", "M", "L"]
     }
 
   ]
