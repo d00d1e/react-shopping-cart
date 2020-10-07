@@ -15,7 +15,7 @@ export default class Products extends Component {
                 </a>
                 <div className="product-price">
                   <div>{formatCurrency(product.price)}</div>
-                  <button class="button primary">Add To Cart</button>
+                  <button className="button primary">Add To Cart</button>
                 </div>
               </div>
             </li>
