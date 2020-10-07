@@ -1,17 +1,38 @@
-import React from 'react';
+import React, { Component } from 'react';
+import Products from './components/Products';
+import data from "./data.json";
 
-function App() {
-  return (
-    <div className="grid-container">
-      <header>
-        <a href="/">Catify Co.</a>
-      </header>
-      <main>
-        <h1>Product Lists</h1>
-      </main>
-      <footer>&#169;2020, Moose Inc. All rights reserved</footer>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      products: data.products,
+      color: '',
+      sort: '',
+    }
+  }
+
+  render() {
+    return (
+      <div className="grid-container">
+        <header>
+          <a href="/">Catmazon</a>
+        </header>
+        <main>
+          <div className="content">
+            <div className="main">
+              <Products products={this.state.products} />
+            </div>
+            <div className="sidebar">
+              Cart Items
+            </div>
+          </div>
+        </main>
+        <footer>&#169;2020, Catmazon Inc.</footer>
+      </div>
+    );
+  }
+  
 }
 
 export default App;
