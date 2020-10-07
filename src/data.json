@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "_id": "shirt2",
+      "_id": "shirt1",
       "title": "Preppy Fleece Sweater",
       "image": "../img/products/plaid-fleece.jpg",
       "description": "Blue and green plaid fleece",
@@ -9,7 +9,7 @@
       "availableSizes":["S", "L"]
     },
     {
-      "_id": "shirt1",
+      "_id": "shirt2",
       "title": "The Grinch Fur Vest",
       "image": "../img/products/grinch-fur.jpg",
       "description": "Limited edition mossy green shiny faux fur",
@@ -25,7 +25,7 @@
       "availableSizes":["S", "M", "L", "XL"]
     },
     {
-      "_id": "shirt5",
+      "_id": "shirt4",
       "title": "Blue Knit Sweater",
       "image": "../img/products/blue-knit.jpg",
       "description": "Hand knitted sleevless sweater",
@@ -33,7 +33,15 @@
       "availableSizes":["XS", "S", "M", "L"]
     },
     {
-      "_id": "shirt4",
+      "_id": "shirt5",
+      "title": "Dark Lord Winter Coat",
+      "image": "../img/products/winter-sweater.jpg",
+      "description": "Winter coat inspired by the Dark Lord",
+      "price": "80",
+      "availableSizes":["M", "L"]
+    },
+    {
+      "_id": "shirt6",
       "title": "The Wolf Fur Vest",
       "image": "../img/products/fur.jpg",
       "description": "Gray wolf fur vest",
@@ -41,12 +49,28 @@
       "availableSizes":["S", "M"]
     },
     {
-      "_id": "shirt6",
+      "_id": "shirt7",
       "title": "Minimalist Mohair Sweater",
       "image": "../img/products/tan-sweater.jpg",
       "description": "Hand knit mohair sweater",
-      "price": "30",
+      "price": "35",
       "availableSizes":["XS", "M", "L"]
+    },
+    {
+      "_id": "shirt8",
+      "title": "Tuxedo Knight Sweater",
+      "image": "../img/products/tuxedo-sweater.jpg",
+      "description": "Cutom hand tailored tuxedo",
+      "price": "30",
+      "availableSizes":["M"]
+    },
+    {
+      "_id": "shirt9",
+      "title": "No Nope Never Fleece",
+      "image": "../img/products/nope-fleece.jpg",
+      "description": "Pullover fleece for days you just dont wanna",
+      "price": "25",
+      "availableSizes":["S", "M", "XL"]
     }
 
   ]

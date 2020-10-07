@@ -50,6 +50,7 @@ header a {
   text-decoration: none;
   font-weight: bold;
   font-size: 2.5rem;
+  margin-left: 2rem;
 }
 
 a {
@@ -136,17 +137,23 @@ footer {
 .button {
   padding: 1rem;
   border: 0.1rem solid #8e8e90;
-  background: #F0C151;
+  background: #c0c0c0;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #e2b13c;
-  border: 0.1rem solid #808080;
+  background: #8e8e90cc
 }
 
-.button .primary {
+.button.primary:hover {
+  background: #e2b13c;
+  border: 0.1rem solid #8e8e90;
+}
+
+.button.primary {
   background: #F0C151;
+  border: 0.1rem solid #8e8e90;
+  padding: 1rem;
 }
 
 
@@ -161,5 +168,58 @@ footer {
 
 .filter div {
   flex: 1;
+}
 
+
+/* CART  */
+.cart {
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+}
+
+.cart-header {
+  border: 0.1rem solid #8e8e90;
+}
+
+.cart-items {
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+}
+
+.cart-items img {
+  width: 5rem;
+}
+
+.cart-items li {
+  display: flex;
+}
+
+.cart-items li div {
+  padding: 0.5rem;
+}
+
+.cart-items li div:last-child {
+  flex: 1;
+}
+
+.right {
+  text-align: right;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.total > div {
+  font-size: 2rem;
+}
+
+.total > div, 
+.total > button {
+  flex: 1;
+  
 }
