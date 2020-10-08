@@ -136,7 +136,7 @@ footer {
 
 .button {
   padding: 1rem;
-  border: 0.1rem solid #8e8e90;
+  border: 0.1rem solid silver;
   background: #c0c0c0;
   cursor: pointer;
 }
@@ -147,12 +147,12 @@ footer {
 
 .button.primary:hover {
   background: #e2b13c;
-  border: 0.1rem solid #8e8e90;
+  border: 0.1rem solid #bd8c7d;
 }
 
 .button.primary {
   background: #F0C151;
-  border: 0.1rem solid #8e8e90;
+  border: 0.1rem solid silver;
   padding: 1rem;
 }
 
@@ -179,7 +179,7 @@ footer {
 }
 
 .cart-header {
-  border: 0.1rem solid #8e8e90;
+  border-bottom: 0.1rem solid #bd8c7d;
 }
 
 .cart-items {
@@ -221,5 +221,26 @@ footer {
 .total > div, 
 .total > button {
   flex: 1;
-  
+}
+
+
+/* CHECKOUT FORM  */
+.form {
+  width: 100%;
+}
+
+.form-container {
+  padding: 0;
+  list-style-type: none;min-width: 100%;
+}
+
+.form-container li {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.form-container li > input {
+  padding: 1rem;
+  border: 0.1rem solid silver; 
 }
