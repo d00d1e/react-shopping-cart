@@ -71,6 +71,14 @@
       "description": "Pullover fleece for days you just dont wanna",
       "price": "25",
       "availableSizes":["S", "M", "XL"]
+    },
+    {
+      "_id": "shirt10",
+      "title": "Turtle Style Sweater",
+      "image": "../img/products/turtleneck.jpg",
+      "description": "Turtleneck sweater",
+      "price": "35",
+      "availableSizes":["M", "L", "XL"]
     }
 
   ]

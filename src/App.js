@@ -9,7 +9,7 @@ class App extends Component {
     super();
     this.state = {
       products: data.products,
-      cartItems:[],
+      cartItems: localStorage.getItem('cartItems') ? JSON.parse(localStorage.getItem('cartItems')) : [], 
       size: '',
       sort: '',
     }
@@ -49,9 +49,8 @@ class App extends Component {
     }
   };
 
-  addToCart = (product) => {
-    // instance of cart items 
-    const cartItems = this.state.cartItems.slice(); 
+  addToCart = (product) => { 
+    const cartItems = this.state.cartItems.slice(); // instance of cart items 
     let alreadyInCart = false;
 
     cartItems.forEach(item => {
@@ -64,13 +63,23 @@ class App extends Component {
     if(!alreadyInCart) {
       cartItems.push({...product, count: 1});
     }
-    this.setState({cartItems});
+    this.setState({
+      cartItems
+    });
+    localStorage.setItem('cartItems', JSON.stringify(cartItems));
   };
 
   removeFromCart = (product) => {
     const cartItems = this.state.cartItems.slice(); 
     // removes current selected product
-    this.setState({cartItems:cartItems.filter(x => x._id !== product._id)})
+    this.setState({
+      cartItems: cartItems.filter(x => x._id !== product._id)
+    });
+    localStorage.setItem('cartItems', JSON.stringify(cartItems.filter(x => x._id !== product._id)));
+  }
+
+  createOrder = (order) => {
+    alert("Need to save order for " + order.name);
   }
 
   render() {
@@ -89,10 +98,17 @@ class App extends Component {
                 filterProducts={this.filterProducts}
                 sortProducts={this.sortProducts}
               />
-              <Products products={this.state.products} addToCart={this.addToCart }/>
+              <Products 
+                products={this.state.products} 
+                addToCart={this.addToCart}
+              />
             </div>
             <div className="sidebar">
-              <Cart cartItems={this.state.cartItems} removeFromCart={this.removeFromCart}/>
+              <Cart 
+                cartItems={this.state.cartItems} 
+                removeFromCart={this.removeFromCart}
+                createOrder={this.createOrder}
+              />
             </div>
           </div>
         </main>
