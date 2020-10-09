@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import formatCurrency from "../util";
-import { Fade, Zoom } from 'react-awesome-reveal';
-import Modal from 'react-modal'; //need to have state to open/hide modal
+import { Fade, Zoom } from "react-awesome-reveal";
+import Modal from "react-modal"; //need to have state to open/hide modal
 
 export default class Products extends Component {
   constructor(props){

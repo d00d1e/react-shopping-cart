@@ -79,6 +79,14 @@
       "description": "TMNT inspired ribbed sweater featuring a ribbed rolled neck, a relaxed fit and fine knit.",
       "price": "35",
       "availableSizes":["M", "L", "XL"]
+    },
+    {
+      "_id": "shirt1",
+      "title": "Rwar Shirt",
+      "image": "../img/products/dino-shirt.jpg",
+      "description": "This one's for all the dinosaur lovers out there!. Gain instant leopard dino vibes while stomping around and staying warm. ",
+      "price": "40",
+      "availableSizes":["L"]
     }
 
   ]

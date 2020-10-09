@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import formatCurrency from "../util";
-import { Slide } from 'react-awesome-reveal';
+import { Slide } from "react-awesome-reveal";
 
 export default class Cart extends Component {
   constructor(props) {
