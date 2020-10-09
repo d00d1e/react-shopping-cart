@@ -225,13 +225,14 @@ footer {
 
 
 /* CHECKOUT FORM  */
-.form {
+form {
   width: 100%;
 }
 
 .form-container {
+  width: 100%;
   padding: 0;
-  list-style-type: none;min-width: 100%;
+  list-style-type: none;
 }
 
 .form-container li {
@@ -240,7 +241,35 @@ footer {
   padding: 1rem;
 }
 
-.form-container li > input {
+input {
   padding: 1rem;
   border: 0.1rem solid silver; 
 }
+
+
+/* PRODUCT DETAILS  */
+.product-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-height: 90vh;
+}
+
+.product-details img {
+  max-height: 90vh;
+  max-width: 45vw;
+  margin: 0 auto;
+}
+
+.product-details-description {
+  flex: 1 1;
+  margin: 1rem;
+}
+
+.close-modal {
+  position: absolute;
+  right: 1rem;
+  top: 2.5rem;
+  z-index: 1000;
+}
+

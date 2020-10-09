@@ -1,82 +1,82 @@
 {
   "products": [
     {
-      "_id": "shirt1",
+      "_id": "sweater1",
       "title": "Preppy Fleece Sweater",
       "image": "../img/products/plaid-fleece.jpg",
-      "description": "Blue and green plaid fleece",
+      "description": "This is for all the latest trends, no matter who you are, where you’re from and what you’re up to. Created by us, styled by you.",
       "price": "20",
       "availableSizes":["S", "L"]
     },
     {
-      "_id": "shirt2",
-      "title": "The Grinch Fur Vest",
+      "_id": "vest1",
+      "title": "The Grinch Vest",
       "image": "../img/products/grinch-fur.jpg",
-      "description": "Limited edition mossy green shiny faux fur",
+      "description": "Limited edition mossy green shiny faux fur for the Grinchiest Grinch of all the Grinches. Christmas is coming!",
       "price": "75",
       "availableSizes":["S", "M", "L"]
     },
     {
-      "_id": "shirt3",
+      "_id": "hoode1",
       "title": "Bad Ass Hoodie",
       "image": "../img/products/badass-hoodie.jpg",
-      "description": "Black Bad Ass Hoodie",
+      "description": "Black Bad Ass Hoodie. Cotton 95% / spandex 5%. Light and stretchy for those chilly nights!",
       "price": "19",
       "availableSizes":["S", "M", "L", "XL"]
     },
     {
-      "_id": "shirt4",
+      "_id": "sweater2",
       "title": "Blue Knit Sweater",
       "image": "../img/products/blue-knit.jpg",
-      "description": "Hand knitted sleevless sweater",
+      "description": "This sweater is perfect for the lively tuna fish-lovers in your home, equipped with a stretchy waist to support their activities. It comes with a smile on your face and a securely sewn-in button in the neck to describe your kitty's deepest desires.",
       "price": "35",
       "availableSizes":["XS", "S", "M", "L"]
     },
     {
-      "_id": "shirt5",
+      "_id": "coat1",
       "title": "Dark Lord Winter Coat",
       "image": "../img/products/winter-sweater.jpg",
-      "description": "Winter coat inspired by the Dark Lord",
+      "description": "You'll barely feel the frost when you're wearing the Dark Lord's winter coat. Designed with a high neck and fur lined hood to really lock in heat, it's a must come cold days. Roll on winter.",
       "price": "80",
       "availableSizes":["M", "L"]
     },
     {
-      "_id": "shirt6",
-      "title": "The Wolf Fur Vest",
+      "_id": "vest2",
+      "title": "The Wolf Vest",
       "image": "../img/products/fur.jpg",
-      "description": "Gray wolf fur vest",
+      "description": "The Grey Wolf has a true lust for life and feels fulfilled when conquering challenges. This Spirit often has much to teach those around them and naturally assumes the role of a silent leader. A Grey Wolf will always fight for what is right. 10% of net profits donated to help endangered species.",
       "price": "50",
       "availableSizes":["S", "M"]
     },
     {
-      "_id": "shirt7",
+      "_id": "sweater3",
       "title": "Minimalist Mohair Sweater",
       "image": "../img/products/tan-sweater.jpg",
-      "description": "Hand knit mohair sweater",
+      "description": "This beautiful and comfortable sweater is hand knitted. It is hand/machine washable (mohair function, 30 degrees C/ 86 F). Yarn is 75% mohair and 25% polyamide.",
       "price": "35",
       "availableSizes":["XS", "M", "L"]
     },
     {
-      "_id": "shirt8",
+      "_id": "sweater4",
       "title": "Tuxedo Knight Sweater",
       "image": "../img/products/tuxedo-sweater.jpg",
-      "description": "Cutom hand tailored tuxedo",
+      "description": "Custom hand tailored tuxedo, perfect for those special occassions. A truly classic piece that can be worn for years to come.",
       "price": "30",
       "availableSizes":["M"]
     },
     {
-      "_id": "shirt9",
-      "title": "No Nope Never Fleece",
+      "_id": "fleece1",
+      "title": "No, Nope, Never Fleece",
       "image": "../img/products/nope-fleece.jpg",
-      "description": "Pullover fleece for days you just dont wanna",
+      "description": "This piece is sure to keep you layered up and looking good throughout the weather event that is everyday life and also for days you just dont wanna.",
       "price": "25",
       "availableSizes":["S", "M", "XL"]
     },
     {
-      "_id": "shirt10",
+      "_id": "sweater5",
       "title": "Turtle Style Sweater",
       "image": "../img/products/turtleneck.jpg",
-      "description": "Turtleneck sweater",
+      "description": "TMNT inspired ribbed sweater featuring a ribbed rolled neck, a relaxed fit and fine knit.",
       "price": "35",
       "availableSizes":["M", "L", "XL"]
     }
