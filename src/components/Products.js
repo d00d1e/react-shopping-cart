@@ -99,7 +99,7 @@ class Products extends Component {
   }
 }
 
-// connect product component to redux store, access items that come from server
-export default connect((state) => ({products: state.products.items}), {
+// connect product component to redux store, show filtered products
+export default connect((state) => ({products: state.products.filteredItems}), {
     fetchProducts
 })(Products);
