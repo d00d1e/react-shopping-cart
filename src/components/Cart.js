@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import formatCurrency from "../util";
 import { Slide } from "react-awesome-reveal";
+import { connect } from "react-redux";
+import { removeFromCart } from "../actions/cartActions";
 
-export default class Cart extends Component {
+class Cart extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -45,7 +47,7 @@ export default class Cart extends Component {
           <div className="cart">
             <Slide direction="left" cascade damping={0.15} triggerOnce>
               <ul className="cart-items">
-                {cartItems.map(item => (
+                {cartItems.map((item) => (
                   <li key={item._id}>
                     <div>
                       <img src={item.image} alt={item.title} />
@@ -108,3 +110,11 @@ export default class Cart extends Component {
     );
   }
 }
+
+export default connect((state) => ({
+  cartItems: state.cart.cartItems 
+}),
+{
+  removeFromCart,
+}
+)(Cart);

@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import formatCurrency from "../util";
 import { Fade, Zoom } from "react-awesome-reveal";
 import Modal from "react-modal"; //need to have state to open/hide modal
-import {connect} from "react-redux";
-import {fetchProducts } from "../actions/productActions";
+import { connect } from "react-redux";
+import { fetchProducts } from "../actions/productActions";
+import { addToCart } from "../actions/cartActions";
 
 class Products extends Component {
   constructor(props){
@@ -70,8 +71,8 @@ class Products extends Component {
                   <p>{product.description}</p>
                   <p>
                     Available Sizes {" "}
-                    {product.availableSizes.map((x, index) => (
-                      <span key={index}> 
+                    {product.availableSizes.map((x) => (
+                      <span key={x._id}> 
                         {" "} 
                         <button className="button">{x}</button>
                       </span>
@@ -100,6 +101,12 @@ class Products extends Component {
 }
 
 // connect product component to redux store, show filtered products
-export default connect((state) => ({products: state.products.filteredItems}), {
-    fetchProducts
-})(Products);
+export default connect((state) => ({ 
+  products: state.products.filteredItems 
+}),
+{
+  fetchProducts,
+  addToCart,
+}
+)(Products);
+
