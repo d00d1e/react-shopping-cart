@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import formatCurrency from "../util";
 import { Fade, Zoom } from "react-awesome-reveal";
-import Modal from "react-modal"; //need to have state to open/hide modal
+import Modal from 'react-awesome-modal';
 import { connect } from "react-redux";
 import { fetchProducts } from "../actions/productActions";
 import { addToCart } from "../actions/cartActions";
@@ -10,7 +10,8 @@ class Products extends Component {
   constructor(props){
     super(props);
     this.state ={
-      product: null
+      product: null,
+      visible: false,
     }
   }
 
@@ -20,11 +21,11 @@ class Products extends Component {
   }
 
   openModal = (product) => {
-    this.setState({ product });
+    this.setState({ product,  visible: true });
   }
 
   closeModal = () => {
-    this.setState({ product: null })
+    this.setState({ product: null, visible: false })
   }
 
   render() {
@@ -58,21 +59,23 @@ class Products extends Component {
 
         {product && (
           <Modal 
-            isOpen={true}
-            onRequestClose={this.closeModal} 
-            ariaHideApp={false} // Modal.setAppElement(el)` or set `appElement={el}`
+            visible={this.state.visible}
+            width="1100"
+            effect="fadeInUp"
+            onClickAway={() => this.closeModal()}
           >
             <Zoom triggerOnce>
-              <button className="close-modal" onClick={this.closeModal}>x</button>
+              
               <div className="product-details">
                 <img src={product.image} alt={product.title}/>
                 <div className="product-details-description">
+                  <button className="close-modal" onClick={this.closeModal}>x</button>
                   <p><strong>{product.title}</strong></p>
                   <p>{product.description}</p>
                   <p>
                     Available Sizes {" "}
-                    {product.availableSizes.map((x) => (
-                      <span key={x._id}> 
+                    {product.availableSizes.map((x, index) => (
+                      <span key={index}> 
                         {" "} 
                         <button className="button">{x}</button>
                       </span>
@@ -104,9 +107,5 @@ class Products extends Component {
 export default connect((state) => ({ 
   products: state.products.filteredItems 
 }),
-{
-  fetchProducts,
-  addToCart,
-}
+{ fetchProducts, addToCart }
 )(Products);
-

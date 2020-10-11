@@ -1,7 +1,8 @@
 import { createStore, applyMiddleware, compose, combineReducers } from "redux";
 import thunk from "redux-thunk";
 import { productsReducer } from "./reducers/productReducers";
-import { cartReducer } from "./reducers/cartReducer";
+import { cartReducer } from "./reducers/cartReducers";
+import { orderReducer } from "./reducers/orderReducers";
 
 const initialState = {};
 // send info about redux store to chrome dev tools
@@ -11,6 +12,7 @@ const store = createStore(
   combineReducers({
     products: productsReducer,
     cart: cartReducer, 
+    order: orderReducer,
   }),
   initialState,
   composeEnhancer(applyMiddleware(thunk))  // compose middleware

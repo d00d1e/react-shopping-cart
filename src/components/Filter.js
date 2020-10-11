@@ -39,8 +39,5 @@ export default connect((state) => ({
   products: state.products.items,
   filteredProducts: state.products.filteredItems,
 }),
-{
-  filterProducts,
-  sortProducts,
-}
+{ filterProducts, sortProducts }
 )(Filter);
