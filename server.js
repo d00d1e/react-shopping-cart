@@ -13,7 +13,7 @@ mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
   useUnifiedTopology: true,
 });
 
-// Order Model
+// Product Model
 const Product = mongoose.model(
   "products",
   new mongoose.Schema({
@@ -73,6 +73,7 @@ const Order = mongoose.model(
   )
 );
 
+// add orders to database
 app.post("/api/orders", async (req, res) => {
   if (
     !req.body.name ||
@@ -86,6 +87,18 @@ app.post("/api/orders", async (req, res) => {
   const order = await Order(req.body).save();
   res.send(order);
 });
+
+// get all orders from database
+app.get("/api/orders", async(req, res) => {
+  const orders = await Order.find({}); // get all orders, no filter
+  res.send(orders);
+});
+
+// delete order from database  
+app.delete("/api/orders/:id", async(req, res) => {
+  const order = await Order.findByIdAndDelete(req.params.id);
+  res.send(order);
+})
 
 // listener on port
 const port = process.env.PORT || 5000;

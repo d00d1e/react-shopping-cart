@@ -40,8 +40,8 @@ class Cart extends Component {
     this.setState({ visible: false })
     this.props.clearOrder();
 
-    // temp fix for CLEAR_CART ?? 
-    window.location.reload(false);
+    // temp fix for CLEAR_CART/CLEAR_ORDER after order ?? 
+    window.location.reload(true);
   };
 
   render() {
@@ -65,7 +65,7 @@ class Cart extends Component {
             <Zoom>
               <div className="order-details">
                 <button className="close-modal" onClick={this.closeModal}>x</button>
-                <h3 className="success-message">Thank You! Your order has been placed.</h3>
+                <h3 className="success-message">Thank You! Your order has been placed. ☻ </h3>
                 <h2>Order #{order._id}</h2>
                 <ul>
                   <li>
