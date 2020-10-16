@@ -33,7 +33,7 @@ class Products extends Component {
 
     return (
       <div>
-        <Fade direction="bottom" cascade damping={0.15} triggerOnce>
+        <Fade direction="bottom" cascade={true} damping={0.15} triggerOnce>
           {!this.props.products ? (
             <div>Loading...</div>
             ) : (
