@@ -1,4 +1,7 @@
-# Shopping Site
+# L'Mau Shopping Cart
+JS | REACT 
+
+<img src="public/img/screenshot.png">
 
 ## Available Scripts
 
