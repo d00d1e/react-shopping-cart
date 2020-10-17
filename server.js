@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 
 // render static file in build folder, entry point at index.html
 app.use("/", express.static(__dirname + "/build"));
-app.get("/", (req, res) => res.send(__dirname + "/build/index.html"))
+app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"))
 
 // connect mongoose to db
 mongoose.connect(
