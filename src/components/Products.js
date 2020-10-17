@@ -60,7 +60,7 @@ class Products extends Component {
         {product && (
           <Modal 
             visible={this.state.visible}
-            width="1100"
+            width="1000"
             effect="fadeInUp"
             onClickAway={() => this.closeModal()}
           >
@@ -68,14 +68,14 @@ class Products extends Component {
               
               <div className="product-details">
                 <img src={product.image} alt={product.title}/>
+                <button className="close-modal" onClick={this.closeModal}>x</button>
                 <div className="product-details-description">
-                  <button className="close-modal" onClick={this.closeModal}>x</button>
                   <p><strong>{product.title}</strong></p>
                   <p>{product.description}</p>
+                  <p> Available Sizes: {"  "}</p>
                   <p>
-                    Available Sizes {" "}
                     {product.availableSizes.map((x, index) => (
-                      <span key={index}> 
+                      <span key={index}>
                         {" "} 
                         <button className="button">{x}</button>
                       </span>

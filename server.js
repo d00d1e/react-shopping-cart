@@ -1,4 +1,4 @@
-const express = require('express');
+const express = require("express");
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const shortid = require("shortid");
@@ -6,12 +6,19 @@ const shortid = require("shortid");
 const app = express();
 app.use(bodyParser.json());
 
+// render static file in build folder, entry point at index.html
+app.use("/", express.static(__dirname + "/build"));
+app.get("/", (req, res) => res.send(__dirname + "/build/index.html"))
+
 // connect mongoose to db
-mongoose.connect("mongodb://localhost/react-shopping-cart-db", {
-  useNewUrlParser: true,
-  useCreateIndex: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart-db", 
+  {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+  }
+);
 
 // Product Model
 const Product = mongoose.model(
@@ -98,7 +105,7 @@ app.get("/api/orders", async(req, res) => {
 app.delete("/api/orders/:id", async(req, res) => {
   const order = await Order.findByIdAndDelete(req.params.id);
   res.send(order);
-})
+});
 
 // listener on port
 const port = process.env.PORT || 5000;
