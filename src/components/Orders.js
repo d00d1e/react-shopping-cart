@@ -30,8 +30,8 @@ class Orders extends Component {
             </tr>
           </thead>
           <tbody>
-            {orders.map((order) => (
-              <tr>
+            {orders.map((order, index) => (
+              <tr key={order._id}>
                 <td>{order._id}</td>
                 <td>{order.createdAt}</td>
                 <td> {formatCurrency(order.total)}</td>
@@ -39,8 +39,8 @@ class Orders extends Component {
                 <td>{order.email}</td>
                 <td>{order.address}</td>
                 <td>
-                  {order.cartItems.map((item) => (
-                    <div>
+                  {order.cartItems.map((item, index) => (
+                    <div key={item._id}>
                       {item.count} {" x "} {item.title}
                     </div>
                   ))}

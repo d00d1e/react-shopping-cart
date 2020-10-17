@@ -336,9 +336,13 @@ input {
 
 
 /* ORDERS */
-.orders {
-  width: 100%;
-  padding: 10px;
+.orders h2 {
+  margin-left: 5rem;
+}
+
+.orders table {
+  width: 100vw;
+  padding: 5rem;
 }
 
 tbody > tr:nth-child(odd){

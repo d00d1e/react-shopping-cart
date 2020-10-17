@@ -11,14 +11,13 @@ app.use("/", express.static(__dirname + "/build"));
 app.get("/", (req, res) => res.sendFile(__dirname + "/build/index.html"))
 
 // connect mongoose to db
-mongoose.connect(
-  process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart-db", 
-  {
-    useNewUrlParser: true,
-    useCreateIndex: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose
+  .connect(process.env.MONGODB_URL || "mongodb://localhost/react-shopping-cart-db", { 
+    useNewUrlParser: true, 
+    useCreateIndex: true, 
+    useUnifiedTopology: true })
+  .then(() => console.log("Database Connected"))
+  .catch(err => console.log(err));
 
 // Product Model
 const Product = mongoose.model(
