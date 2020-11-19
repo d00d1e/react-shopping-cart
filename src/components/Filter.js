@@ -5,7 +5,7 @@ import { filterProducts, sortProducts } from "../actions/productActions";
 class Filter extends Component {
   render() {
     return !this.props.filteredProducts ? (
-      <div>Loading filter...</div>
+      <div></div>
     ) : (
       <div className="filter">
         <div className="filter-result">{this.props.filteredProducts.length} Products</div>
@@ -20,7 +20,7 @@ class Filter extends Component {
         <div className="filter-color">
           Filter {" "}
           <select value={this.props.size} onChange={(e) => this.props.filterProducts(this.props.products, e.target.value)}>
-            <option value="*">All</option>
+            <option value="">All</option>
             <option value="XS">XS</option>
             <option value="S">S</option>
             <option value="M">M</option>
