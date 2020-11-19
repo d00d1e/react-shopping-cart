@@ -87,8 +87,15 @@
       "description": "This one's for all the dinosaur lovers out there!. Gain instant leopard dino vibes while stomping around and staying warm. ",
       "price": "40",
       "availableSizes":["L"]
+    },
+    {
+      "_id": "vest3",
+      "title": "Black Panther",
+      "image": "../img/products/blackfur-vest.jpg",
+      "description": "Soft and sleek pullover vest made with 100% real panther fur for those chilly days. Made in honor of Chadwich 'T'Challa' Boseman. Wakanda Furever!",
+      "price": "50",
+      "availableSizes":["S", "M", "L"]
     }
-
   ]
 }
 
